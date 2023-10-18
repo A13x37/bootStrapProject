@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: #9fafca;
+}
+
+
+.container-main {
+    border: 1px solid black;
+}
+
+
+.row-1 {
+    background-color: #0e387a;
+    height: 5vh;
+}
+
+
+.row-2 {
+    height: 95vh;
+}
+
+
+.Inbox {
+    border: 2px solid #0e387a;
+}
+
+
+.textBox {
+    border: 2px solid #0e387a;
+}
+
+
+#email-1-button {
+    height: 30px;
+    min-width: 100%;
+    background-color: #366dc5;
+    border: 2px solid #9fafca;
+    overflow: hidden;
+}
+
+
+#email-1-button:hover {
+    background-color: lightgray;
+}
+
+
+#email-2-button {
+    height: 30px;
+    min-width: 100%;
+    background-color: #366dc5;
+    border: 2px solid #9fafca;
+    overflow: hidden;
+}
+
+
+
+#email-3-button {
+    height: 30px;
+    min-width: 100%;
+    background-color: #366dc5;
+    border: 2px solid #9fafca;
+    overflow: hidden;
+}
+
+
+#email-2-button:hover {
+    background-color: lightgrey;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.makeEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+
+input:hover {
+    background-color: lightgray;
+}
+
+
+button:hover {
+    background-color: lightgrey;
+}
+
+
+textarea {
+    min-height: 300px;
+    max-height: 300px;
+}
