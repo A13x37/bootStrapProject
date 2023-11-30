@@ -15,25 +15,31 @@
         <div class="container-fluid container-main">
             <div class="row row-1">
                 <div class="col nav-bar">
-                    <input id="search-bar" type="text" placeholder="Search...">
-                    <input id="home-button" type="button" value="Home">
-                    <input id="filter-button" type="button" value="Filter">
-                    <input id="delete-button" type="button" value="Delete">
-                    <input id="archive-button" type="button" value="Archive">
-                    <button id="compose" onclick="createEmail()">Compose</button>
+                        <input id="search-bar" type="text" placeholder="Search...">
+                        <input id="filter-button" type="button" value="Filter">
+                        <button id="compose" onclick="createEmail()">Compose</button>
                 </div>
             </div>
             
 
             <div class="row row-2">
-                <div class="col Inbox">
-                    <h1><strong><u>Inbox</u></strong></h1>
+                <div class="col-12 col-md-12 col-xxl-6 Inbox">
+                    <div class="col col2">
+                        <h1>Inbox</h1>
+                        <button type="button" class="btn btn-primary position-relative">
+                            Unread
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                              3+
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                          </button>
+                    </div>
                     <button id="email-1-button" onclick="openEmail1()">Good evening, just reaching out about your car's extended warenty...</button>
                     <button id="email-2-button" onclick="openEmail2()">Warrning $1,000 withdrawled take action imeditly. Click link and enter password to...</button>
                     <button id="email-3-button" onclick="openEmail3()">Congradulations!! It is your lucky day, you won $1,000,000...</button>
                 </div>
 
-                <div class="col textBox">
+                <div class="col-12 col-md-12 col-xxl-6 textBox">
                     <p id="no-message">No Message Selected.<br>Select a message to view or compose a new one.</p>
                     <p id="email-1"></p>
                     <p id="email-2"></p>
@@ -55,7 +61,7 @@
                             document.getElementById("no-message").innerHTML = "";
                         }
                         function openEmail2() {
-                            document.getElementById("email-2").innerHTML = "From: scammer@gmail.com <br>Sent on: 9/18/23<br><br>Warning $1,000 withdrawled tkae action imdeditky. Click link and enter password to stop transaction. www.notascam.com. This is not a scam.";
+                            document.getElementById("email-2").innerHTML = "<div class=alert-danger d-flex align-items-center role=alert> <svg class=bi flex-shrink-0 me-2 width=24 height=24 role=aria-label=Danger:><use xlink:href=#exclamation-triangle-fill/> </svg> <div> WARNING YOU NOW HAVE 16 VIRUSES!!! </div> </div> <br> From: scammer@gmail.com <br>Sent on: 9/18/23<br><br>Warning $1,000 withdrawled tkae action imdeditky. Click link and enter password to stop transaction. www.notascam.com. This is not a scam.";
                             document.getElementById("create-email").innerHTML = "";
                             document.getElementById("email-1").innerHTML = "";
                             document.getElementById("email-3").innerHTML = "";
